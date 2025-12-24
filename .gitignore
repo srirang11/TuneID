@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+
+# Databases
+*.db
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+
+# OS files
+.DS_Store
+
+# Node / frontend servers
+node_modules/
+
+# IDE
+.vscode/

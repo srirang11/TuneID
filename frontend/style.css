@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.main {
+  flex: 2;
+  padding: 40px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.sidebar {
+  flex: 1;
+  background: #181818;
+  padding: 20px;
+  border-left: 1px solid #333;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#songList {
+  list-style: none;
+  padding: 0;
+}
+
+#songList li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #222;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#songList li:hover {
+  background: #333;
+}

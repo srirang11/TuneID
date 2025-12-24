@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TuneID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- LEFT: Main App -->
+    <div class="main">
+      <h1>TuneID</h1>
+
+      <button id="recordBtn">🎙️ Start Recording</button>
+      <button id="stopBtn" disabled>⏹️ Stop Recording</button>
+
+      <p id="status"></p>
+      <div id="result"></div>
+    </div>
+
+    <!-- RIGHT: Song List -->
+    <div class="sidebar">
+      <h2>Demo Song Library</h2>
+      <ul id="songList">
+        <li>All I Want for Christmas Is You - Mariah Carey</li>
+        <li>Last Christmas - Wham!</li>
+        <li>Rockin' Around The Christmas Tree - Brenda Lee</li>
+        <li>Jingle Bell Rock - Bobby Helms</li>
+        <li>Golden - HUNTR/X/EJAE/Audrey Nuna/REI AMI/KPop Demon Hunters Cast</li>
+        <li>The Fate of Ophelia - Taylor Swift</li>
+        <li>Ordinary - Alex Warren</li>
+        <li>Santa Tell Me - Ariana Grande</li>
+        <li>The Christmas Song (Merry Christmas To You) (Remastered 1999) - Nat King Cole</li>
+        <li>It's the Most Wonderful Time of the Year - Andy Williams</li>
+        <li>Underneath the Tree - Kelly Clarkson</li>
+        <li>Man I Need - Olivia Dean</li>
+        <li>Let It Snow! Let It Snow! Let It Snow! - Dean Martin</li>
+        <li>It's Beginning to Look a Lot like Christmas - Michael Bublé</li>
+        <li>Sleigh Ride - The Ronettes</li>
+        <li>A Holly Jolly Christmas - Burl Ives</li>
+        <li>Feliz Navidad - José Feliciano</li>
+        <li>Christmas (Baby Please Come Home) - Darlene Love</li>
+        <li>White Christmas (1947 Version) - Bing Crosby/Ken Darby Singers/John Scott Trotter And His Orchestra</li>
+        <li>MUTT - Leon Thomas</li>
+        <li>Jingle Bells - Frank Sinatra</li>
+        <li>Run Rudolph Run - Chuck Berry</li>
+        <li>back to friends - sombr</li>
+        <li>It's Beginning to Look a Lot Like Christmas (with Mitchell Ayres & His Orchestra) - Perry Como/The Fontane Sisters/Mitchell Ayres & His Orchestra</li>
+        <li>Opalite - Taylor Swift</li>
+        <li>Folded - Kehlani</li>
+        <li>Choosin' Texas - Ella Langley</li>
+        <li>DAISIES - Justin Bieber</li>
+        <li>Deck the Halls - Nat King Cole</li>
+        <li>Santa Baby (with Henri René & His Orchestra) - Eartha Kitt/Henri René & His Orchestra</li>
+        <li>Blue Christmas - Elvis Presley/Kane Brown</li>
+        <li>Here Comes Santa Claus (Right Down Santa Claus Lane) (1947 Version) - Gene Autry</li>
+        <li>Wonderful Christmastime (Full Length Version / Remastered 2011) - Paul McCartney</li>
+        <li>Please Come Home for Christmas (2013 Remaster) - Eagles</li>
+        <li>Like It's Christmas - Jonas Brothers</li>
+        <li>Holly Jolly Christmas - Michael Bublé</li>
+        <li>Rudolph the Red-Nosed Reindeer - Gene Autry</li>
+        <li>Christmas Time Is Here (Vocal) - Vince Guaraldi Trio</li>
+        <li>Little Saint Nick - The Beach Boys</li>
+        <li>Santa, Can’t You Hear Me - Kelly Clarkson & Ariana Grande</li>
+        <li>You're A Mean One, Mr. Grinch - Thurl Ravenscroft</li>
+        <li>It Depends (feat. Bryson Tiller) - Chris Brown/Bryson Tiller</li>
+        <li>Merry Christmas - Ed Sheeran & Elton John</li>
+        <li>Mistletoe - Justin Bieber</li>
+        <li>TIT FOR TAT - Tate McRae</li>
+        <li>Santa Claus Is Coming To Town - Jackson 5</li>
+        <li>So Easy (To Fall In Love) - Olivia Dean</li>
+        <li>Baby It's Cold Out Side - Dean Martin</li>
+        <li>Winter Wonderland - Darlene Love</li>
+        <li>This Christmas - Donny Hathaway</li>
+        <li>Tears - Sabrina Carpenter</li>
+        <li>Don't Mind If I Do - Riley Green/Ella Langley</li>
+        <li>WHERE IS MY HUSBAND! - Raye</li>
+        <li>wgft (feat. Burna Boy) - Gunna/Burna Boy</li>
+        <li>Gabriela - KATSEYE</li>
+        <li>Happen To Me (feat. Jonas Brothers) - Russell Dickerson/Jonas Brothers</li>
+        <li>20 Cigarettes - Morgan Wallen</li>
+        <li>Nice To Meet You - Myles Smith</li>
+        <li>6 Months Later - Megan Moroney</li>
+        <li>Is It a Crime - Mariah the Scientist/Kali Uchis</li>
+        <li>YUKON - Justin Bieber</li>
+        <li>Hell At Night (feat. Ella Langley) - BigXthaPlug/Ella Langley</li>
+        <li>House Again - Hudson Westbrook</li>
+        <li>Better Me For You (Brown Eyes) - Max McNown</li>
+        <li>A Couple Minutes - Olivia Dean</li>
+        <li>NOBODY'S GIRL - Tate McRae</li>
+        <li>Shot Callin - YoungBoy Never Broke Again</li>
+        <li>Elizabeth Taylor - Taylor Swift</li>
+        <li>3,2,1 - Tucker Wetmore</li>
+        <li>Dracula - Tame Impala</li>
+        <li>Take Me Thru Dere - Metro Boomin/Quavo/Breskii/YKNIECE/DJ SPINZ</li>
+        <li>The Fall - Cody Johnson</li>
+        <li>Travelin' Soldier - Cody Johnson</li>
+        <li>Sugar On My Tongue - Tyler, The Creator</li>
+        <li>12 to 12 - sombr</li>
+        <li>Darlin' - Chase Matthew</li>
+        <li>Amen - Shaboozey/Jelly Roll</li>
+        <li>Last One To Know - Gavin Adcock</li>
+        <li>Favorite Country Song - Hardy</li>
+        <li>Father Figure - Taylor Swift</li>
+        <li>Camera - Ed Sheeran</li>
+        <li>ErrTime - Cardi B</li>
+        <li>Back in the Saddle - Luke Combs</li>
+        <li>Wi$h Li$t - Taylor Swift</li>
+        <li>Cowgirl - Parmalee</li>
+        <li>Shake The Snow Globe (from “Oh.  What.  Fun.”) (Amazon Music Original) - Gwen Stefani</li>
+        <li>Days Like These - Luke Combs</li>
+        <li>ANYTHING BUT LOVE - Tate McRae</li>
+        <li>What Kinda Man - Parker McCollum</li>
+        <li>How Far Does A Goodbye Go - Jason Aldean</li>
+        <li>Nice To Each Other - Olivia Dean</li>
+        <li>Gone Gone Gone - David Guetta, Teddy Swims & Tones and I</li>
+        <li>The Dead Dance - Lady Gaga</li>
+        <li>Went Legit - G Herbo/Southside</li>
+        <li>Sienna - The Marías</li>
+        <li>For Good - Cynthia Erivo/Ariana Grande</li>
+        <li>No Good Deed - Cynthia Erivo</li>
+        <li>Let Alone The One You Love - Olivia Dean</li>
+        <li>The Life of a Showgirl - Taylor Swift/Sabrina Carpenter</li>
+        <li>When Did You Get Hot? - Sabrina Carpenter</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
