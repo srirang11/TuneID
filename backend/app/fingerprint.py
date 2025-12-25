@@ -34,7 +34,7 @@ def generate_fingerprints(constellation):
             
             # Hash combines the two frequencies and their time relationship
             hash_input = f"{anchor_freq}|{target_freq}|{time_delta}"
-            fp_hash = hashlib.sha256(hash_input.encode()).hexdigest()[:16]
+            fp_hash = hashlib.sha1(hash_input.encode()).hexdigest()[:12]
             
             fingerprints.append((fp_hash, anchor_time))
             
