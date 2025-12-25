@@ -29,7 +29,7 @@ recordBtn.onclick = async () => {
     mediaRecorder = new MediaRecorder(stream);
     mediaRecorder.start();
 
-    statusText.innerText = "🎙️ Recording... (play a song)";
+    statusText.innerText = " Recording... (play a song)";
     recordBtn.disabled = true;
     stopBtn.disabled = false;
 
@@ -39,7 +39,7 @@ recordBtn.onclick = async () => {
 
   } catch (err) {
     console.error(err);
-    statusText.innerText = "❌ Microphone access denied";
+    statusText.innerText = " Microphone access denied";
   }
 };
 
@@ -51,7 +51,7 @@ stopBtn.onclick = async () => {
 
   recordBtn.disabled = false;
   stopBtn.disabled = true;
-  statusText.innerText = "⏳ Processing audio...";
+  statusText.innerText = " Processing audio...";
 
   mediaRecorder.onstop = async () => {
     try {
@@ -60,7 +60,7 @@ stopBtn.onclick = async () => {
       await sendToBackend(wavBlob);
     } catch (err) {
       console.error(err);
-      statusText.innerText = "❌ Error processing audio";
+      statusText.innerText = " Error processing audio";
     }
   };
 };
@@ -85,7 +85,7 @@ async function sendToBackend(wavBlob) {
     const data = await response.json();
 
     if (!data.song) {
-      resultDiv.innerHTML = "<h3>❌ No match found</h3>";
+      resultDiv.innerHTML = "<h3> No match found</h3>";
     } else {
       resultDiv.innerHTML = `
         <h3>🎵 Match Found</h3>
@@ -94,10 +94,10 @@ async function sendToBackend(wavBlob) {
       `;
     }
 
-    statusText.innerText = "✅ Done";
+    statusText.innerText = " Done";
   } catch (err) {
     console.error(err);
-    statusText.innerText = "❌ Error identifying song";
+    statusText.innerText = " Error identifying song";
   }
 }
 
