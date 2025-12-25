@@ -88,7 +88,7 @@ async function sendToBackend(wavBlob) {
       resultDiv.innerHTML = "<h3> No match found</h3>";
     } else {
       resultDiv.innerHTML = `
-        <h3>🎵 Match Found</h3>
+        <h3> Match Found</h3>
         <p><b>Song:</b> ${data.song}</p>
         <p><b>Score:</b> ${data.score}</p>
       `;
