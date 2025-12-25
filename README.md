@@ -1,4 +1,4 @@
-# 🎵 Shazam Clone – Music Recognition System
+# TuneID – Music Recognition System
 
 A Shazam-style music recognition system built using **audio fingerprinting**, **spectral peak hashing**, and a **FastAPI backend**, capable of identifying songs from short audio clips.
 
@@ -85,29 +85,3 @@ Matched Song Result
 - JavaScript (Fetch API)
 
 ---
-
-## 📂 Project Structure
-
-shazam_clone/
-│
-├── backend/
-│ ├── app/
-│ │ ├── init.py
-│ │ ├── audio.py
-│ │ ├── fingerprint.py
-│ │ ├── matcher.py
-│ │ ├── ingest.py
-│ │ ├── database.py
-│ │ └── config.py
-│ │
-│ ├── api.py
-│ ├── requirements.txt
-│ └── fingerprints.db (generated locally)
-│
-├── frontend/
-│ ├── index.html
-│ ├── script.js
-│ └── style.css
-│
-├── .gitignore
-└── README.md
